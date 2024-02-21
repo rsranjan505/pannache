@@ -1,4 +1,58 @@
-<footer class="footer">
+<div class="footer-main">
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+
+          </div>
+          <hr>
+        </div>
+    </footer>
+    <div id="footer-bottom">
+    <div class="container">
+        <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-6">
+                <div class="copyright">
+                <p>© Copyright 2024 PannacheInteriors. </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600" data-aos-once="true">
+                <div class="footer-menu">
+                  <div class="social-links">
+                    <ul class="d-flex list-unstyled">
+                      <li>
+                        <a href="#">
+                          <svg class="facebook">
+                            <use xlink:href="#facebook">
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg class="instagram">
+                            <use xlink:href="#instagram">
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <svg class="linkedin">
+                            <use xlink:href="#linkedin">
+                          </svg>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+{{-- <footer class="footer">
     <div class="container-fluid">
         <div class="footer-inner flex flex-space-between">
             <div class="button-wrap">
@@ -11,25 +65,25 @@
             </div>
             <nav>
                 <ul>
-                    {{-- <li id="menu-item-4005"
+                    <li id="menu-item-4005"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4005"><a
-                            href="#">Cookie Policy</a></li> --}}
+                            href="#">Cookie Policy</a></li>
                     <li id="menu-item-267"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a
                             href="#">Privacy Policy</a></li>
                     <li id="menu-item-4000"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4000"><a
                             href="#">Sitemap</a></li>
-                    {{-- <li id="menu-item-4287"
+                    <li id="menu-item-4287"
                         class="manage-cookies-link menu-item menu-item-type-custom menu-item-object-custom menu-item-4287">
                         <a href="#">Manage Cookies</a>
-                    </li> --}}
+                    </li>
                 </ul>
             </nav>
             <div class="footer-right flex">
                 <span class="copyright">&copy; PANNACHE Interiors 2024</span>
-                {{-- <span class="created">Created at <a href="https://thehideout.co.uk/" target="_blank">The Hideout</a></span> --}}
+                <span class="created">Created at <a href="https://thehideout.co.uk/" target="_blank">The Hideout</a></span>
             </div>
         </div>
     </div>
-</footer>
+</footer> --}}

@@ -1,4 +1,90 @@
-<header class="header">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<header id="header" class="site-header">
+    <nav id="header-nav" class="navbar navbar-expand-lg px-3">
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="{{ route('home')}}">
+          <img src="{{ asset('assets/img/logo/logo.png')}}" class="logo">
+        </a>
+        <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+          <div class="offcanvas-header px-4 pb-0">
+            <a class="navbar-brand" href="{{ route('home')}}">
+              <img src="{{ asset('assets/img/logo/logo.png')}}" class="logo">
+            </a>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul id="navbar" class="navbar-nav w-100 d-flex justify-content-center align-items-center">
+                <a class="navbar-brand d-none d-lg-block me-0" style="padding-right: 100px;" href="{{ route('home')}}">
+                    <img src="{{ asset('assets/img/logo/favicon.png')}}" class="logo">
+                </a>
+
+
+              <ul class="list-unstyled d-lg-flex justify-content-md-between align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link ms-0 {{Request::is('about-us') ? 'active' : ''}}" href="{{ route('about')}}">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0 {{Request::is('services') ? 'active' : ''}}" href="{{ route('services')}}">Services</a>
+                </li>
+                {{-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages<svg class="bi" width="18" height="18"><use xlink:href="#chevron-down"></use></svg></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="about.html" class="dropdown-item fs-5 fw-medium">About <span class="text-primary">(PRO)</span></a>
+                    </li>
+                    <li>
+                      <a href="shop.html" class="dropdown-item fs-5 fw-medium">Shop <span class="text-primary">(PRO)</span></a>
+                    </li>
+                    <li>
+                      <a href="single-product.html" class="dropdown-item fs-5 fw-medium">Single Product <span class="text-primary">(PRO)</span></a>
+                    </li>
+                    <li>
+                      <a href="login.html" class="dropdown-item fs-5 fw-medium">Account <span class="text-primary">(PRO)</span></a>
+                    </li>
+                    <li>
+                      <a href="cart.html" class="dropdown-item fs-5 fw-medium">Cart <span class="text-primary">(PRO)</span></a>
+                    </li>
+                    <li>
+                      <a href="checkout.html" class="dropdown-item fs-5 fw-medium">Checkout <span class="text-primary">(PRO)</span></a>
+                    </li>
+                    <li>
+                      <a href="blog.html" class="dropdown-item fs-5 fw-medium">Blog <span class="text-primary">(PRO)</span></a>
+                    </li>
+                    <li>
+                      <a href="single-post.html" class="dropdown-item fs-5 fw-medium">Single Post <span class="text-primary">(PRO)</span></a>
+                    </li>
+                    <li>
+                      <a href="contact.html" class="dropdown-item fs-5 fw-medium">Contact <span class="text-primary">(PRO)</span></a>
+                    </li>
+                  </ul>
+                </li> --}}
+              </ul>
+
+
+
+              <ul class="list-unstyled d-lg-flex justify-content-end align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link ms-0 {{Request::is('portfolio') ? 'active' : ''}}" href="{{ route('portfolio')}}">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-0 {{Request::is('contact-us') ? 'active' : ''}}" href="{{ route('contact')}}">Contact Us</a>
+                </li>
+
+              </ul>
+              <a class="navbar-brand d-none d-lg-block me-0" href="{{ route('home')}}">
+                <img src="{{ asset('assets/img/logo/logo.png')}}" class="logo">
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+{{-- <header class="header">
     <style>
         .header {
             --headerlogo: url({{ asset('assets/img/logo/logo.svg')}});
@@ -66,53 +152,4 @@
             </div>
         </div>
     </div>
-
-    {{-- <div class="menu-bar v1">
-        <div class="container">
-            <div class="menu-bar-content">
-                <nav class="main-menu">
-
-                    <ul>
-                        <li class=" {{Request::is('/') ? 'active' : ''}}">
-                            <a class="active" href="{{ route('home') }}">Home</a>
-                        </li>
-                        <li class="{{Request::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}">About Us</a></li>
-                        <li class="has-dropdown {{Request::is('services') ? 'active' : ''}}">
-                            <a href="{{ route('services') }}">Products</a>
-                            <ul>
-                                @if (isset($products))
-                                    @foreach ($products as $product)
-                                        <li><a href="{{route('product.details',['name' => $product->slug])}}">{{ ucfirst($product->name)}}</a></li>
-                                    @endforeach
-                                @endif
-                            </ul>
-                        </li>
-
-                        <li class=" {{Request::is('client') ? 'active' : ''}}">
-                            <a href="{{ route('client') }}">Clients</a>
-                        </li>
-                        <li class=" {{Request::is('gallery') ? 'active' : ''}}">
-                            <a href="{{ route('gallery') }}">Media & Gallery</a>
-                            <ul>
-                                <li><a href="blog.html">Media & Gallery</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="{{Request::is('career') ? 'active' : ''}}">
-                            <a href="{{ route('career') }}">Careers</a>
-                        </li>
-                         <li class="{{Request::is('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="social-link">
-                    <ul>
-                        <li><a href="#"><span class="my-icon icon-facebook"></span></a></li>
-                        <li><a href="#"><span class="my-icon icon-instagram"></span></a></li>
-                        <li><a href="#"><span class="my-icon icon-twitter"></span></a></li>
-                        <li ><a style="font-weight: 700" href="{{ route('login')}}">Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-</header>
+</header> --}}
