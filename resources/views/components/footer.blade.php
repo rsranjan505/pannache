@@ -1,18 +1,11 @@
 <div class="footer-main">
-    <footer id="footer">
-        <div class="container">
-          <div class="row">
 
-          </div>
-          <hr>
-        </div>
-    </footer>
     <div id="footer-bottom">
     <div class="container">
         <div class="row d-flex flex-wrap justify-content-between">
             <div class="col-6">
-                <div class="copyright">
-                <p>© Copyright 2024 PannacheInteriors. </p>
+                <div class="copyright  header-icon" style="padding-top: 10px;">
+                <p >© Copyright 2024 PannacheInteriors. </p>
                 </div>
             </div>
             <div class="col-lg-6 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600" data-aos-once="true">

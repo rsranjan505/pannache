@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="about-content col-lg-4 m-auto top-0 end-0 bottom-0">
-          <span class="title-accent fs-6 text-uppercase">Why us</span>
+          <h3 class="">Why us</h3>
 
           <p>Unwavering Quality: Our commitment to excellence is reflected in every
             detail, from start to finish.</p>

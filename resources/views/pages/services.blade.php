@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="about-content col-lg-4 m-auto top-0 end-0 bottom-0">
-          <span class="title-accent fs-6 text-uppercase"> Interior Design</span>
+          <h4> Interior Design</h4>
 
           <p>Conceptualization: Every great design begins with an idea. We happily
             spend hours brainstorming, sketching, and visualizing concepts that lay
@@ -81,7 +81,7 @@
           </div>
         </div>
         <div class="about-content col-lg-4 m-auto top-0 end-0 bottom-0">
-          <span class="title-accent fs-6 text-uppercase">Fitout Services </span>
+          <h4>Fitout Services </h4>
 
           <p>Scope Definition: Full clarity on scope inclusions put together
             systematically in the contract Bill of Quantities detailing the materials
@@ -127,7 +127,7 @@
       </div>
     </div>
     <div class="about-content col-lg-4 m-auto top-0 end-0 bottom-0">
-      <h4 class="title-accent fs-6 text-uppercase">Project Management</h4>
+      <h4>Project Management</h4>
 
       <p>Initiation & Planning: Every project starts with a clear understanding of the
         client’s needs. We chart out a detailed plan with timelines, budgets and
@@ -149,5 +149,11 @@
   </div>
 </div>
 </section>
-
+<div class="container">
+    <div class="margin-section">
+        <div class="image-holder zoom-out">
+            <img src="{{ asset('assets/img/service-2.jpg')}}" alt="single" class="single-image img-fluid">
+        </div>
+    </div>
+</div>
 @endsection

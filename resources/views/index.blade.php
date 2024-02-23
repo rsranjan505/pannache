@@ -21,9 +21,9 @@
   <section id="about" class="padding-xlarge">
     <div class="container">
       <div class="row">
-        <div class="offset-md-2 col-md-8">
-          <span class="title-accent fs-6 text-uppercase" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">About us</span>
-          <h3 class="py-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">“In a city that never settles for the ordinary, Pannache Interiors is dedicated to creating spaces that mirror Dubai’s magnificent spirit."</h3>
+        <div class="offset-md-2 col-md-8" style="text-align: center;">
+          <h3 class="py-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">About us</h3>
+          <h5 class="py-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">“In a city that never settles for the ordinary, Pannache Interiors is dedicated to creating spaces that mirror Dubai’s magnificent spirit."</h5>
           <p data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1800" data-aos-once="true">Based in the dynamic hub of Dubai, Pannache Interiors stands as a paradigm of magnificent design solutions with authentic elegance & precision-driven fitouts. Merging rich heritage with top trends in global aesthetics, we believe in the transformative power of thoughtfully crafted spaces that leave a lasting impression.</p>
         </div>
       </div>
@@ -195,8 +195,8 @@
     </div>
   </section> --}}
 
-  <section id="our-video">
-    <div class="video-section jarallax d-flex align-items-center justify-content-center" style="background: url({{ asset("assets/img/bg1.jpg")}}) no-repeat;">
+  <section id="our-video" class="margin-section">
+    <div class="video-section jarallax d-flex align-items-center justify-content-center" style="background: url({{ asset("assets/img/bg-2.jpg")}}) no-repeat;">
       <div class="video-player text-center">
         <a type="button" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/W_tIumKa8VY" data-bs-target="#myModal" class="play-btn position-relative">
           <svg class="position-absolute top-0 bottom-0 start-0 end-0 m-auto" width="41" height="41"><use xlink:href="#play"></use></svg>
@@ -205,6 +205,7 @@
       </div>
     </div>
   </section>
+
   {{-- <section id="testimonials" class="position-relative padding-xlarge">
     <div class="container">
       <div class="row">
@@ -332,20 +333,19 @@
   <section id="banner" data-aos="fade" data-aos-once="true">
     <div class="banner-content-1 position-relative" style="background:url('{{ asset('assets/img/about.jpg')}}') no-repeat left; background-size: cover; height: 100%;">
       <div class="banner-content-text position-absolute" data-aos="fade" data-aos-delay="1000" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
-        <h2>Old handmade</h2>
-        <a href="shop.html" class="btn">Shop it now</a>
+        {{-- <h2>Service</h2> --}}
+        <a href="{{route('services')}}" class="btn">Service</a>
       </div>
     </div>
     <div class="banner-content-2 position-relative" style="background:url('{{ asset('assets/img/about-3.jpg')}}') no-repeat left; background-size: cover; height: 100%;">
       <div class="banner-content-text position-absolute" data-aos="fade" data-aos-delay="1000" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
-        <h2>Double handle</h2>
-        <a href="shop.html" class="btn">Shop collection</a>
+        {{-- <h2>Double handle</h2> --}}
+        <a href="{{route('portfolio')}}" class="btn">Portfolio</a>
       </div>
     </div>
     <div class="banner-content-3 position-relative" style="background:url('{{ asset('assets/img/about-2.jpg')}}') no-repeat left; background-size: cover; height: 100%;">
       <div class="banner-content-text position-absolute" data-aos="fade" data-aos-delay="1000" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
-        <h2>Pumpers</h2>
-        <a href="shop.html" class="btn">Shop collection</a>
+        <a href="{{route('contact')}}" class="btn">Contact us</a>
       </div>
     </div>
   </section>

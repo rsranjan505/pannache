@@ -67,7 +67,7 @@ CSS STRUCTURE:
   --navbar-color-color:       #EE7E25;
   --swiper-theme-color:       #EE7E25;
   --swiper-pagination-color:  #EE7E25;
-  --secondary-color:          #F4F0EA;
+  --secondary-color:          #A3B18A;
 }
 
 /* on mobile devices below 600px
@@ -524,11 +524,11 @@ img.zoom-in {
 .navbar-nav .nav-item a.nav-link {
   margin-right: 100px;
   margin-left: 100px;
-  color: var(--primary-color);
+  color: var(--black-color);
 }
 .navbar-nav .nav-item a.nav-link.active,
 .navbar-nav .nav-item a.nav-link:hover {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 .dropdown-toggle::after {
   display: none;
@@ -980,4 +980,18 @@ h5.widget-title {
 .post-navigation:hover svg,
 .post-navigation:focus svg {
   fill: var(--primary-color);
+}
+
+
+/* //custome */
+.header-icon {
+    position: absolute;
+    right: auto;
+    left: 60px;
+}
+
+.header-logo{
+    position: absolute;
+    left: auto;
+    right: 60px;
 }
